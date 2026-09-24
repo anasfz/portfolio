@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0cba67e35e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="#about" class="logo">AnesFz</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <div>
+            <h2>Hi I'm <span>Anes</span></h2>
+            <h3>I'm a front-end developer</h3>
+            <a href="#projects" class="main-btn">View my work</a><br>
+            <!-- ضع رابط حسابك الفعلي مكان علامة # -->
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div>
+            <img src="images/man coding1.jpg" alt="Anes Front-end Developer">
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="info">
+                    <h3>Developing a landing page</h3>
+                    <p>I will develop a clean, fast, and fully responsive landing page for your business or product. Using (HTML, CSS and JavaScript), I will write high-quality, optimized code to bring your idea to life. The page will look great on all devices, load quickly, and include smooth interactions and functional contact forms.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-file-pen"></i></div>
+                <div class="info">
+                    <h3>Customize your landing page</h3>
+                    <p>I will fix, update, and improve your existing HTML, CSS, and JavaScript code. Whether you need to fix layout bugs, update styles, add new features, or make your website fully responsive, I will provide clean and optimized code to make your project work perfectly.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-code-compare"></i></div>
+                <div class="info">
+                    <h3>Convert your Figma design into a responsive landing page</h3>
+                    <p>I will convert your Figma design into a clean, fast, and fully responsive landing page. Using HTML, CSS, and JavaScript, I will write high-quality, pixel-perfect code to bring your design to life. The page will look great on all devices, load quickly, and match your exact vision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="container">
+            <div class="project-card">
+                <div class="project-img">
+                    <!-- تركت اسم الصورة كما هو لكي لا يختفي من جهازك، لكن عدلت الوصف والنص -->
+                    <img src="images/restorentWeb.PNG" alt="Restaurant Website">
+                </div>
+                <div class="project-info">
+                    <h3>Restaurant Website</h3>
+                    <p>A responsive restaurant website featuring multiple sections.</p>
+                    <a href="https://anasfz.github.io/restorent-web/" target="_blank" rel="noopener noreferrer">Display</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div id="header2">
+            <h2><i class="fa-solid fa-envelope"></i> Contact Me</h2>
+        </div>
+        <div id="row">
+            <img src="images/Contact Me.jpg" alt="Get in Touch">
+            <form action="https://formsubmit.co/fezziouianes@gmail.com" method="post">
+                <input type="text" name="Name" id="name" placeholder="Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <textarea name="message" id="message" placeholder="Message" required rows="10"></textarea>
+                <button type="submit" value="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 | All rights reserved.</p>
+    </footer>
+</body>
+</html>
