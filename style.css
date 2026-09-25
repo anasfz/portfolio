@@ -37,6 +37,9 @@ header {
     z-index: 1000;
     align-items: center;
 }
+.menu-btn{
+    display: none;
+}
 
 .logo {
     text-decoration: none;
@@ -328,69 +331,66 @@ footer {
     text-align: center;
 }
 
-/* ======================================================
-   Media Queries - لدعم توافق الموقع مع الهواتف والأجهزة اللوحية
-====================================================== */
+/* ==============
+   Media Queries 
+================== */
 
-@media (max-width: 991px) {
+@media (max-width: 1151px) {
+    html{
+        font-size: 80%;
+    }
+    #row{
+        flex-direction: column;
+    }
+    #about{
+        flex-direction: column;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 60%;
+    }
     section {
         padding: 50px 5%;
     }
-    
-    #about {
-        flex-direction: column-reverse;
+    #about{
         gap: 3rem;
-        margin-top: 3rem;
     }
-
-    #about h2 {
-        font-size: 3rem;
+    .card{
+        width: 100%;
+        margin: 10px 0;
     }
-    
-    #about h2 span {
-        font-size: 3.5rem;
+    #contact #row{
+        width: 100%;
+        padding: 2rem 1.5rem;
+        border-radius: 1rem;
     }
-    
-    #about h3 {
+    /* Mobile Menu Settings */
+    header nav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 30%;
+        padding: 1rem 3rem;
+        background:rgba(30, 41, 59, 0.699);
+        border-bottom-left-radius: 1rem;
+        border-left: 2px solid rgba(42, 118, 225, 0.726);
+        border-bottom:2px solid rgba(42, 118, 225, 0.726);
+        display: none;
+    }
+    header nav a{
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: 0;
+    text-align: center;
+    }
+    header nav.active{
+        display: block;
+    }
+    .menu-btn{
+        display: block;
+        color: var(--main-color);
         font-size: 2rem;
-    }
-
-    #contact #row {
-        flex-direction: column;
-        width: 95%;
-        gap: 3rem;
-        padding: 2rem 1rem;
-    }
-
-    #contact #row img {
-        width: 300px;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 15px 5%;
-    }
-    
-    nav {
-        margin-top: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    nav a {
-        margin-left: 0;
-        font-size: 1rem;
-    }
-
-    #contact h2 {
-        font-size: 2.5rem;
-    }
-    
-    .project-card {
-        padding: 20px 10px;
     }
 }
