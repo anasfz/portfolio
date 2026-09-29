@@ -122,9 +122,17 @@ nav a:hover {
 .main-btn:hover {
     transform: scale(1.05);
 }
-
-.fa-github {
+#link-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+#link-btn a{
+    display: inline-block;
+    
     margin-top: 3rem;
+    
     font-size: 2rem;
     color: var(--text-color);
     border: 3px solid var(--main-color);
@@ -134,8 +142,9 @@ nav a:hover {
     transition: 0.2s ease-in-out;
 }
 
-.fa-github:hover {
-    transform: scale(1.05);
+#link-btn a:hover {
+    background-color: var(--text-color);
+    color: var(--main-color);
 }
 
 #services {
@@ -331,9 +340,9 @@ footer {
     text-align: center;
 }
 
-/* ==============
-   Media Queries 
-================== */
+/* ======================================================
+   Media Queries - لدعم توافق الموقع مع الهواتف والأجهزة اللوحية
+====================================================== */
 
 @media (max-width: 1151px) {
     html{
@@ -393,4 +402,6 @@ footer {
         color: var(--main-color);
         font-size: 2rem;
     }
+
+
 }
