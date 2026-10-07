@@ -69,7 +69,7 @@
     <section id="projects">
         <h2 class="title">Projects</h2>
         <div class="container">
-            <div class="project-card">
+            <div class="project-card" data-project="restaurant">
                 <div class="project-img">
                     <img src="images/restorentWeb.PNG" alt="Restaurant Website">
                 </div>
@@ -80,7 +80,7 @@
                 </div>
             </div>
             
-            <div class="project-card">
+            <div class="project-card" data-project="lol-wiki">
                 <div class="project-img">
                     <img src="images/lol-champions-wiki.PNG" alt="lol-champions-wiki">
                 </div>
@@ -92,7 +92,8 @@
             </div>
         </div>
     </section>
-    
+
+
     <section id="contact">
         <div id="header2">
             <h2><i class="fa-solid fa-envelope"></i> Contact Me</h2>
@@ -108,6 +109,22 @@
         </div>
     </section>
     
+    <div class="modal" id="project-modal" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2 id="modal-title"></h2>
+            <div id="modal-desc"></div>
+
+            <div class="modal-links">
+                <a id="modal-live" class="main-btn" target="_blank" rel="noopener noreferrer">View Live Site</a>
+                <a id="modal-github" class="main-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+            <div class="modal-images" id="modal-images"></div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2026 | All rights reserved.</p>
     </footer>
