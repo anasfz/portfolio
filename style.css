@@ -343,7 +343,109 @@ footer {
     padding: 1.5rem 0;
     text-align: center;
 }
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.modal.open{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-box {
+    position: relative;
+    background-color: var(--second-bg-color);
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 1rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    transform: translateY(40px);
+    transition: 0.3s ease-in-out;
+}
+.modal.open .modal-box {
+    transform: translateY(0);
+}
+.modal-close{
+    position: sticky;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    width: 2.8rem;
+    height: 2.8rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 5;
+    transition: 0.2s ease-in-out;
+}
+.modal-close:hover{
+    transform: scale(1.1);
+}
+.modal-box h2{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.modal-box p{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+.modal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.project-card {
+    cursor: pointer;
+}
+.modal-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.modal-images img {
+    width: 100%;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+#modal-desc h3 {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+}
 
+#modal-desc ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+#modal-desc li {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+}
+
+#modal-desc li::marker {
+    color: var(--main-color);
+}
 /* ======================================================
    Media Queries
 ====================================================== */
